@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Radiação</title>
+</head>
+
+<body>
+    <h1>Material radioativo</h1>
+    <p class="exibir">Materiais radioativos estão perdendo massa de acordo com a queima do núcleo. A cada 30 segundos,
+        há uma perda de 25%; escreva um valor para massa e veja em quantos segundos torna-se menor que 0,10 (sem medida)
+    </p>
+    <button class="exibir">Calcular</button>
+
+    <script>
+        var button = document.querySelector('button');
+
+        button.onclick = function () {
+            var n = prompt('Digite um valor');
+            alert('O valor ' + n + ', será calculado com perca de 25%');
+            var porcento = 25;
+            var porcentagem = 100;
+            var total = porcento / porcentagem;
+            var n2 = n * total;
+            var n3 = n2 * total;
+            var n4 = n3 * total;
+            var n5 = n4 * total;
+            var n6 = n5 * total;
+            alert('A massa final, baseada na perda foi de' + n6 + 'em 300 segundos');
+        }
+
+
+        // function valorRegressivo() {
+        //     var n1 = document.getElementById("aleatorio").innerHTML;
+        //     var primeiro = 25;
+        //     var segundo = 100;
+        //     var n1_1 = primeiro / segundo;
+        //     var n2 = n1 / n1_1;
+        //     var n3 = n2 / n1_1;
+        //     var n4 = n3 / n1_1;
+        //     var n5 = n4 / n1_1;
+        //     var n6 = n5 / n1_1;
+        //     alert(n6);
+        //     console.log(n6);
+        // }
+    </script>
+</body>
+
+</html>
